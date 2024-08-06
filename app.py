@@ -21,7 +21,7 @@ if input:
     with open('test.xyz') as in_file:
         xyz_data = in_file.read()
 
-    st.text_area(label="Output Coordinate:", value=file, height=550)
+    st.text_area(label="Output Coordinate:", value=xyz_data, height=550)
 
     st.title("XYZ Molecule Viewer")
         
