@@ -14,6 +14,8 @@ def render_mol(xyz):
     return view
 
 if input:
+    input = input.replace('X11', 'SE11')
+    input = input.replace('X21', 'SE21')
     dimer = psi4.geometry(input)
     dimer.update_geometry()
     dimer.save_xyz_file('test.xyz', False)
